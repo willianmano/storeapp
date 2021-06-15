@@ -1,0 +1,43 @@
+{
+    "name": "willianmano/storeapp",
+    "description": "Webservice for store app.",
+    "keywords": [
+        "microframework",
+        "rest",
+        "router",
+        "psr7"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Willian Mano",
+            "email": "willianmanoaraujo@gmail.com",
+            "homepage": "https://willianmano.github.io"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "ext-json": "*",
+        "pagarme/pagarme-php": "^4.1",
+        "slim/psr7": "^1.1",
+        "slim/slim": "^4.5"
+    },
+    "config": {
+        "process-timeout": 0,
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "start": "php -S localhost:8080 -t public",
+        "test": "phpunit"
+    }
+}
